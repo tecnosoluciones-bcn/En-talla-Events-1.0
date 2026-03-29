@@ -1,261 +1,403 @@
 <!DOCTYPE html>
+<html lang="es" class="dark scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="En Talla Events diseña bodas, celebraciones privadas y eventos corporativos exclusivos con una ejecución impecable y atención absoluta al detalle." />
+  <meta name="theme-color" content="#0b1229" />
+  <title>En Talla Events | Eventos exclusivos con elegancia y precisión</title>
 
-<html class="dark" lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Contacto | En Talla Events</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "tertiary-fixed": "#e4e3d7",
-              "tertiary": "#c7c7bc",
-              "tertiary-fixed-dim": "#c7c7bc",
-              "secondary-container": "#424862",
-              "on-surface-variant": "#c6c6ce",
-              "secondary": "#bfc5e4",
-              "primary-fixed-dim": "#e9c176",
-              "on-tertiary": "#303129",
-              "on-tertiary-fixed": "#1b1c15",
-              "primary-container": "#1b1100",
-              "surface-variant": "#2d344c",
-              "surface-tint": "#e9c176",
-              "on-error": "#690005",
-              "error-container": "#93000a",
-              "tertiary-container": "#12130c",
-              "inverse-primary": "#775a19",
-              "surface-bright": "#323851",
-              "outline-variant": "#46464d",
-              "on-surface": "#dce1ff",
-              "on-primary-fixed": "#261900",
-              "inverse-surface": "#dce1ff",
-              "secondary-fixed": "#dce1ff",
-              "surface-container-low": "#141a32",
-              "surface-dim": "#0b1229",
-              "primary-fixed": "#ffdea5",
-              "surface": "#0b1229",
-              "outline": "#909098",
-              "surface-container-lowest": "#060d24",
-              "background": "#0b1229",
-              "on-secondary": "#292f48",
-              "on-error-container": "#ffdad6",
-              "on-tertiary-fixed-variant": "#46473f",
-              "on-tertiary-container": "#7e7e74",
-              "on-secondary-fixed": "#141a32",
-              "inverse-on-surface": "#292f48",
-              "on-primary": "#412d00",
-              "on-secondary-container": "#b1b7d6",
-              "on-secondary-fixed-variant": "#3f465f",
-              "secondary-fixed-dim": "#bfc5e4",
-              "error": "#ffb4ab",
-              "surface-container-highest": "#2d344c",
-              "on-primary-fixed-variant": "#5d4201",
-              "on-primary-container": "#9a7836",
-              "on-background": "#dce1ff",
-              "surface-container": "#181e36",
-              "primary": "#e9c176",
-              "surface-container-high": "#222941"
-            },
-            fontFamily: {
-              "headline": ["Noto Serif"],
-              "body": ["Manrope"],
-              "label": ["Manrope"]
-            },
-            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            background: '#0b1229',
+            surface: '#10182f',
+            surfaceSoft: '#151e38',
+            surfaceMuted: '#1c2643',
+            primary: '#e9c176',
+            primaryDeep: '#c89d45',
+            secondary: '#bfc5e4',
+            text: '#edf2ff',
+            textMuted: '#b7bed8',
+            line: 'rgba(191,197,228,0.14)'
           },
-        },
+          fontFamily: {
+            headline: ['Noto Serif', 'serif'],
+            body: ['Manrope', 'sans-serif']
+          },
+          boxShadow: {
+            glow: '0 18px 60px rgba(233, 193, 118, 0.18)',
+            soft: '0 24px 80px rgba(0, 0, 0, 0.24)'
+          }
+        }
       }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
-        }
-        .glass-panel {
-            background: rgba(45, 52, 76, 0.4);
-            backdrop-filter: blur(20px);
-        }
-    </style>
+    }
+  </script>
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 250, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .glass {
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .hero-overlay {
+      background:
+        radial-gradient(circle at top, rgba(233, 193, 118, 0.18), transparent 28%),
+        linear-gradient(to bottom, rgba(11, 18, 41, 0.45), rgba(11, 18, 41, 0.78), #0b1229 100%);
+    }
+
+    .section-grid {
+      background-image:
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+  </style>
 </head>
-<body class="bg-surface text-on-surface font-body selection:bg-primary/30">
-<!-- Top Navigation Bar -->
-<nav class="fixed top-0 w-full z-50 bg-[#0b1229]/90 backdrop-blur-md shadow-2xl shadow-[#000000]/20">
-<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
-<div class="flex items-center gap-3">
-<img alt="Logo" class="h-10 w-auto" data-alt="Sophisticated gold line-art logo for luxury event planning brand on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv2LSgUti-bVARfBAgx2JXnSwnD5pGyjv14G6pfOLdGM8oxTAx9FjB15YhfbjJ3u3MBgM1zAdk0NxquuoAc2BBSA7E3FfBIG_FcA1WeMfNk7baqNoZXCZumes--_LZjcvE_r-ws0vAFTZreJNUqPvnQS6Gy5u6BN9PMkntnjB7L_4y63l3qCuA9KYtD0_rKP0ciIOgrxVLnwekT9zhhn-hsucqJxiPOZ5HjIBfjuCjVqdxTsJcoOIXM0OUywGWoPsVdTcBxf1TMds"/>
-<span class="text-2xl font-serif font-bold tracking-widest text-[#e9c176] uppercase">En Talla Events</span>
-</div>
-<div class="hidden md:flex items-center gap-10 font-serif text-lg tracking-tight">
-<a class="text-[#bfc5e4] hover:text-[#e9c176] transition-colors duration-300" href="#">Inicio</a>
-<a class="text-[#bfc5e4] hover:text-[#e9c176] transition-colors duration-300" href="#">Servicios</a>
-<a class="text-[#bfc5e4] hover:text-[#e9c176] transition-colors duration-300" href="#">Nosotros</a>
-<a class="text-[#e9c176] border-b border-[#e9c176] pb-1 font-medium" href="#">Contacto</a>
-</div>
-<button class="bg-primary text-on-primary px-8 py-3 rounded-md font-label text-sm uppercase tracking-widest font-bold hover:opacity-80 transition-all active:scale-95 duration-150">
-                Agendar Cita
-            </button>
-</div>
-</nav>
-<main class="pt-32 pb-24">
-<!-- Hero Section -->
-<section class="max-w-7xl mx-auto px-8 mb-20 text-center">
-<span class="font-label text-xs uppercase tracking-[0.4em] text-primary mb-4 block">Hablemos de tu visión</span>
-<h1 class="font-headline text-5xl md:text-7xl text-on-surface leading-tight mb-6">
-                Diseñemos Juntos tu<br/> <span class="italic text-primary">Próximo Gran Evento</span>
-</h1>
-<p class="max-w-2xl mx-auto text-secondary text-lg font-light leading-relaxed">
-                Desde celebraciones íntimas hasta galas monumentales, transformamos tus sueños en realidades tangibles y extraordinarias.
+<body class="bg-background text-text font-body antialiased selection:bg-primary selection:text-background">
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-background/80 glass">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+      <a href="#inicio" class="flex items-center gap-3" aria-label="Ir al inicio">
+        <div class="flex h-11 w-11 items-center justify-center rounded-full border border-primary/25 bg-primary/10 text-primary shadow-glow">
+          <span class="material-symbols-outlined">diamond</span>
+        </div>
+        <div>
+          <p class="font-headline text-xl font-bold tracking-[0.18em] text-primary uppercase">En Talla Events</p>
+          <p class="text-xs uppercase tracking-[0.28em] text-textMuted">Luxury Event Design</p>
+        </div>
+      </a>
+
+      <nav class="hidden items-center gap-8 md:flex" aria-label="Navegación principal">
+        <a href="#servicios" class="text-sm uppercase tracking-[0.22em] text-secondary transition hover:text-primary">Servicios</a>
+        <a href="#nosotros" class="text-sm uppercase tracking-[0.22em] text-secondary transition hover:text-primary">Nosotros</a>
+        <a href="#galeria" class="text-sm uppercase tracking-[0.22em] text-secondary transition hover:text-primary">Galería</a>
+        <a href="#contacto" class="text-sm uppercase tracking-[0.22em] text-secondary transition hover:text-primary">Contacto</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#contacto" class="hidden rounded-full border border-primary/30 px-5 py-2.5 text-xs font-bold uppercase tracking-[0.22em] text-primary transition hover:bg-primary hover:text-background sm:inline-flex">
+          Solicitar propuesta
+        </a>
+        <button id="menuButton" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-text md:hidden" aria-expanded="false" aria-controls="mobileMenu" aria-label="Abrir menú">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden border-t border-white/5 bg-surface/95 px-6 py-5 md:hidden">
+      <nav class="flex flex-col gap-4" aria-label="Navegación móvil">
+        <a href="#servicios" class="text-sm uppercase tracking-[0.22em] text-secondary">Servicios</a>
+        <a href="#nosotros" class="text-sm uppercase tracking-[0.22em] text-secondary">Nosotros</a>
+        <a href="#galeria" class="text-sm uppercase tracking-[0.22em] text-secondary">Galería</a>
+        <a href="#contacto" class="text-sm uppercase tracking-[0.22em] text-secondary">Contacto</a>
+        <a href="#contacto" class="mt-2 inline-flex w-full items-center justify-center rounded-full bg-primary px-5 py-3 text-xs font-extrabold uppercase tracking-[0.22em] text-background">
+          Agendar cita
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="relative flex min-h-screen items-center overflow-hidden pt-28">
+      <div class="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1600&q=80"
+          alt="Salón elegante preparado para un evento exclusivo con iluminación cálida y decoración refinada"
+          class="h-full w-full object-cover"
+        />
+        <div class="hero-overlay absolute inset-0"></div>
+      </div>
+
+      <div class="relative mx-auto grid max-w-7xl gap-14 px-6 py-20 lg:grid-cols-[1.15fr_0.85fr] lg:px-8">
+        <div class="max-w-3xl">
+          <span class="mb-5 inline-flex rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.28em] text-primary">
+            Producción · Diseño · Coordinación integral
+          </span>
+          <h1 class="font-headline text-5xl leading-tight text-white sm:text-6xl lg:text-8xl">
+            Eventos de alto nivel con una ejecución 
+            <span class="italic text-primary">absolutamente impecable</span>
+          </h1>
+          <p class="mt-8 max-w-2xl text-lg leading-8 text-textMuted sm:text-xl">
+            Diseñamos bodas, celebraciones privadas y eventos corporativos con una dirección estética precisa, proveedores seleccionados y una experiencia a medida desde el primer briefing hasta el último detalle.
+          </p>
+
+          <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+            <a href="#contacto" class="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-sm font-extrabold uppercase tracking-[0.22em] text-background shadow-glow transition hover:-translate-y-0.5 hover:bg-[#f0cb86]">
+              Comienza tu evento
+            </a>
+            <a href="#servicios" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-8 py-4 text-sm font-bold uppercase tracking-[0.22em] text-secondary transition hover:border-primary/40 hover:text-primary">
+              Descubrir servicios
+              <span class="material-symbols-outlined text-lg">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="self-end rounded-3xl border border-white/8 bg-white/5 p-6 shadow-soft glass">
+          <div class="grid gap-5 sm:grid-cols-3 lg:grid-cols-1">
+            <div class="rounded-2xl border border-white/8 bg-background/35 p-5">
+              <p class="text-xs uppercase tracking-[0.24em] text-primary">Experiencia</p>
+              <p class="mt-3 text-3xl font-extrabold text-white">360º</p>
+              <p class="mt-2 text-sm leading-6 text-textMuted">Dirección creativa, logística, ambientación, protocolo y coordinación de proveedores.</p>
+            </div>
+            <div class="rounded-2xl border border-white/8 bg-background/35 p-5">
+              <p class="text-xs uppercase tracking-[0.24em] text-primary">Enfoque</p>
+              <p class="mt-3 text-3xl font-extrabold text-white">A medida</p>
+              <p class="mt-2 text-sm leading-6 text-textMuted">Cada evento se construye desde cero en función del estilo, público y objetivos del cliente.</p>
+            </div>
+            <div class="rounded-2xl border border-white/8 bg-background/35 p-5">
+              <p class="text-xs uppercase tracking-[0.24em] text-primary">Resultado</p>
+              <p class="mt-3 text-3xl font-extrabold text-white">Memorable</p>
+              <p class="mt-2 text-sm leading-6 text-textMuted">Una puesta en escena sofisticada, fluida y coherente en cada fase del evento.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="nosotros" class="section-grid border-t border-white/5 bg-surface py-24 sm:py-32">
+      <div class="mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-2 lg:px-8">
+        <div class="relative">
+          <img
+            src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80"
+            alt="Montaje refinado de mesa para evento premium con vajilla elegante y velas"
+            class="h-[520px] w-full rounded-[2rem] object-cover shadow-soft"
+          />
+          <div class="absolute -bottom-8 right-6 max-w-xs rounded-[1.5rem] border border-primary/20 bg-background/90 p-6 shadow-glow">
+            <p class="text-xs font-bold uppercase tracking-[0.22em] text-primary">Nuestra promesa</p>
+            <p class="mt-3 text-base leading-7 text-textMuted">
+              Transformar una idea en una experiencia de marca o celebración con estética, orden y una narrativa visual impecable.
             </p>
-</section>
-<section class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-<!-- Form Section -->
-<div class="lg:col-span-7 space-y-12">
-<div class="bg-surface-container-low p-10 rounded-xl relative overflow-hidden group">
-<!-- Subtle decorative line -->
-<div class="absolute top-0 left-0 w-1 h-full bg-primary/30"></div>
-<form class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<div class="space-y-2">
-<label class="font-label text-[10px] uppercase tracking-widest text-secondary font-bold">Nombre Completo</label>
-<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 py-3 text-on-surface placeholder:text-outline/50 transition-all font-light" placeholder="Ej. Alejandra Valdés" type="text"/>
-</div>
-<div class="space-y-2">
-<label class="font-label text-[10px] uppercase tracking-widest text-secondary font-bold">Tipo de Evento</label>
-<select class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 py-3 text-on-surface appearance-none transition-all font-light">
-<option class="bg-surface-container-high">Boda Boutique</option>
-<option class="bg-surface-container-high">Lanzamiento Corporativo</option>
-<option class="bg-surface-container-high">Cena de Gala</option>
-<option class="bg-surface-container-high">Evento Privado</option>
-</select>
-</div>
-<div class="space-y-2">
-<label class="font-label text-[10px] uppercase tracking-widest text-secondary font-bold">Fecha Estimada</label>
-<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 py-3 text-on-surface transition-all font-light" type="date"/>
-</div>
-<div class="space-y-2">
-<label class="font-label text-[10px] uppercase tracking-widest text-secondary font-bold">Presupuesto Referencial</label>
-<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 py-3 text-on-surface placeholder:text-outline/50 transition-all font-light" placeholder="Opcional" type="text"/>
-</div>
-<div class="md:col-span-2 space-y-2">
-<label class="font-label text-[10px] uppercase tracking-widest text-secondary font-bold">Mensaje / Visión del Evento</label>
-<textarea class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 py-3 text-on-surface placeholder:text-outline/50 transition-all font-light resize-none" placeholder="Cuéntanos qué tienes en mente..." rows="4"></textarea>
-</div>
-<div class="md:col-span-2 pt-6">
-<button class="w-full md:w-auto px-12 py-5 bg-gradient-to-r from-primary to-primary-fixed-variant text-on-primary rounded-md font-label font-bold uppercase tracking-[0.2em] text-sm hover:shadow-[0_0_30px_rgba(233,193,118,0.2)] transition-all active:scale-95" type="submit">
-                                Solicitar Cotización
-                            </button>
-</div>
-</form>
-</div>
-<!-- Visual Magic Section -->
-<div class="relative group cursor-pointer overflow-hidden rounded-xl h-80">
-<div class="absolute inset-0 bg-surface-dim/40 group-hover:bg-surface-dim/20 transition-all duration-700 z-10"></div>
-<img class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000" data-alt="Dreamy outdoor luxury wedding reception at night with warm fairy lights and elegant table settings under trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH2dwf0zEId54lMmgudTTy63P5ciYQg26bTt7WdO3q0QJgukNv69ovNpUI9juPIafUNsfqLgDj3eyvpy1e8lkNo97JPJQGnINagscNYDYDjytB7feNtFjActttY2LVRf3KFBCG79lt3W8hzmpxWEmlwfr-g-9R_kpCSxrzk2E7GuVlEoyhnIxnIndulenNNahzqJBM9A8O2IATb3L87pXeDYfWul16YOSJtMQsq8Ouaq-upgwymypuWSLK-j9anBZtGK_YHGCtM10"/>
-<div class="absolute bottom-8 left-8 z-20">
-<h3 class="font-headline text-2xl text-white mb-2 italic">Donde sucede la magia</h3>
-<div class="flex items-center gap-2 text-primary">
-<span class="material-symbols-outlined text-sm">location_on</span>
-<span class="font-label text-xs uppercase tracking-widest">Ciudad de México &amp; Destinos Globales</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Contact Info Sidebar -->
-<aside class="lg:col-span-5 space-y-16 lg:pl-12">
-<div class="space-y-8">
-<h2 class="font-headline text-3xl italic">Canales Directos</h2>
-<div class="space-y-10">
-<div class="flex items-start gap-6">
-<div class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-primary">mail</span>
-</div>
-<div>
-<p class="font-label text-[10px] uppercase tracking-widest text-secondary font-bold mb-1">Escríbenos</p>
-<a class="text-xl font-headline hover:text-primary transition-colors" href="mailto:hola@entallaevents.com">hola@entallaevents.com</a>
-</div>
-</div>
-<div class="flex items-start gap-6">
-<div class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-primary">phone_iphone</span>
-</div>
-<div>
-<p class="font-label text-[10px] uppercase tracking-widest text-secondary font-bold mb-1">Hablemos</p>
-<a class="text-xl font-headline hover:text-primary transition-colors" href="tel:+525512345678">+52 55 1234 5678</a>
-</div>
-</div>
-<div class="flex items-start gap-6">
-<div class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-primary">schedule</span>
-</div>
-<div>
-<p class="font-label text-[10px] uppercase tracking-widest text-secondary font-bold mb-1">Horario de Atelier</p>
-<p class="text-secondary font-light">Lunes a Viernes: 10:00 - 19:00<br/>Sábados: Previa Cita</p>
-</div>
-</div>
-</div>
-</div>
-<div class="space-y-6">
-<h2 class="font-headline text-2xl italic">Redes Sociales</h2>
-<div class="flex flex-wrap gap-4">
-<a class="px-6 py-3 rounded-full border border-outline-variant hover:border-primary hover:text-primary transition-all font-label text-xs uppercase tracking-widest" href="#">Instagram</a>
-<a class="px-6 py-3 rounded-full border border-outline-variant hover:border-primary hover:text-primary transition-all font-label text-xs uppercase tracking-widest" href="#">Pinterest</a>
-<a class="px-6 py-3 rounded-full border border-outline-variant hover:border-primary hover:text-primary transition-all font-label text-xs uppercase tracking-widest" href="#">LinkedIn</a>
-</div>
-</div>
-<div class="p-8 bg-surface-container-highest rounded-xl border border-primary/10">
-<span class="material-symbols-outlined text-primary text-4xl mb-4" data-weight="fill">verified</span>
-<h4 class="font-headline text-xl mb-2">Compromiso Premium</h4>
-<p class="text-secondary text-sm font-light leading-relaxed">
-                        Garantizamos una respuesta personalizada en menos de 24 horas hábiles. Tu evento merece nuestra atención indivisa desde el primer contacto.
-                    </p>
-</div>
-</aside>
-</section>
-</main>
-<!-- Map Section Visual -->
-<section class="w-full h-[500px] relative bg-surface-container-lowest overflow-hidden">
-<div class="absolute inset-0 bg-surface/40 z-10 pointer-events-none"></div>
-<!-- This represents the map or a localized visual -->
-<div class="w-full h-full bg-slate-900" data-location="Mexico City" style="">
-<img class="w-full h-full object-cover opacity-30 grayscale" data-alt="High-contrast black and white architectural aerial shot of Mexico City urban landscape with deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWRSkrDJ44inP0MroYF7ncnS5ldTvdz_nS_welz2ikwgUgbwiHiiH8wHPlKtP8mmxN-IF30M8EzIYbrWNwe4kGc_8fumZp2PwqVwFJajYqH2ZkMJKc8cvVLSiZwFCfZiep-ACLzaPKr-f5boHnnPceTQ1iHLgO2IMHxuK2svMet4l_4ZF59XjEn1vKlgZ1URBVoXvY4wDNRsUz8-l4znQ9tMpSNEd4TzaGeAHGs41r-iZkdsxORaMVpXSgpnVBLqZ5CgXWKw_A_qI"/>
-</div>
-<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-center">
-<div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center animate-pulse mb-4 mx-auto">
-<span class="material-symbols-outlined text-primary text-3xl" data-weight="fill">location_on</span>
-</div>
-<p class="font-headline text-2xl text-on-surface">Atelier Polanco</p>
-<p class="font-label text-xs uppercase tracking-[0.3em] text-primary">Sede Central</p>
-</div>
-</section>
-<!-- Footer -->
-<footer class="bg-[#0b1229] border-t border-[#bfc5e4]/10 w-full py-16 px-8">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start max-w-7xl mx-auto">
-<div class="space-y-4">
-<span class="text-xl font-serif italic text-[#e9c176]">En Talla Events</span>
-<p class="font-sans text-sm tracking-wide text-[#bfc5e4] max-w-xs">
-                    Curando momentos que perduran para siempre en la memoria de quienes los viven.
-                </p>
-</div>
-<div class="flex flex-col gap-3">
-<h4 class="font-serif text-[#e9c176] mb-2 uppercase text-xs tracking-widest">Legal</h4>
-<a class="font-sans text-sm tracking-wide text-[#bfc5e4] hover:text-[#e9c176] transition-colors focus:underline decoration-[#e9c176]" href="#">Privacidad</a>
-<a class="font-sans text-sm tracking-wide text-[#bfc5e4] hover:text-[#e9c176] transition-colors focus:underline decoration-[#e9c176]" href="#">Términos de Servicio</a>
-<a class="font-sans text-sm tracking-wide text-[#bfc5e4] hover:text-[#e9c176] transition-colors focus:underline decoration-[#e9c176]" href="#">Prensa</a>
-</div>
-<div class="md:text-right space-y-4">
-<p class="font-sans text-sm tracking-wide text-[#bfc5e4]">
-                    © 2024 En Talla Events. La excelencia en cada detalle.
-                </p>
-<div class="flex md:justify-end gap-6 text-[#e9c176]">
-<span class="material-symbols-outlined cursor-pointer hover:opacity-70 transition-opacity">share</span>
-<span class="material-symbols-outlined cursor-pointer hover:opacity-70 transition-opacity">star</span>
-<span class="material-symbols-outlined cursor-pointer hover:opacity-70 transition-opacity">favorite</span>
-</div>
-</div>
-</div>
-</footer>
-</body></html>
+          </div>
+        </div>
+
+        <div>
+          <span class="text-xs font-bold uppercase tracking-[0.28em] text-primary">Sobre En Talla Events</span>
+          <h2 class="mt-4 font-headline text-4xl leading-tight text-white sm:text-5xl">
+            La excelencia está en la dirección del conjunto y en la precisión del detalle.
+          </h2>
+          <p class="mt-8 text-lg leading-8 text-textMuted">
+            En En Talla Events concebimos cada proyecto como una pieza única. No trabajamos desde plantillas: analizamos el contexto, perfilamos el concepto creativo y ejecutamos con una metodología rigurosa para que el resultado sea elegante, funcional y perfectamente coordinado.
+          </p>
+          <p class="mt-6 text-lg leading-8 text-textMuted">
+            Nuestro equipo gestiona diseño, timing, ambientación, experiencia del invitado y supervisión operativa para que el cliente solo tenga que centrarse en disfrutar del momento y representar su visión con total confianza.
+          </p>
+
+          <div class="mt-10 grid gap-5 sm:grid-cols-2">
+            <div class="rounded-2xl border border-white/8 bg-surfaceSoft p-5">
+              <h3 class="text-base font-bold text-white">Curaduría estética</h3>
+              <p class="mt-2 text-sm leading-6 text-textMuted">Paleta, materiales, iluminación, floristería y puesta en escena alineados con un concepto sólido.</p>
+            </div>
+            <div class="rounded-2xl border border-white/8 bg-surfaceSoft p-5">
+              <h3 class="text-base font-bold text-white">Coordinación integral</h3>
+              <p class="mt-2 text-sm leading-6 text-textMuted">Cronograma, proveedores, incidencias y supervisión en directo bajo una única dirección.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="border-t border-white/5 bg-background py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
+          <div class="max-w-3xl">
+            <span class="text-xs font-bold uppercase tracking-[0.28em] text-primary">Servicios principales</span>
+            <h2 class="mt-4 font-headline text-4xl leading-tight text-white sm:text-6xl">Eventos concebidos con intención, sofisticación y control total</h2>
+          </div>
+          <p class="max-w-xl text-lg leading-8 text-textMuted">
+            Trabajamos distintos formatos con el mismo estándar: propuesta estética clara, producción ordenada y experiencia coherente para anfitriones e invitados.
+          </p>
+        </div>
+
+        <div class="mt-16 grid gap-8 lg:grid-cols-3">
+          <article class="group overflow-hidden rounded-[2rem] border border-white/8 bg-surface shadow-soft">
+            <div class="relative h-80 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80" alt="Celebración privada elegante en interior de lujo" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-background/15 to-transparent"></div>
+            </div>
+            <div class="p-8">
+              <span class="text-xs font-bold uppercase tracking-[0.22em] text-primary">Exclusividad</span>
+              <h3 class="mt-3 font-headline text-3xl text-white">Fiestas privadas</h3>
+              <p class="mt-4 text-base leading-7 text-textMuted">Celebraciones íntimas o de gran formato con ambientación premium, logística fluida y una identidad visual cuidada al milímetro.</p>
+            </div>
+          </article>
+
+          <article class="group overflow-hidden rounded-[2rem] border border-white/8 bg-surface shadow-soft lg:-translate-y-8">
+            <div class="relative h-80 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1200&q=80" alt="Graduación distinguida en espacio ceremonial elegante" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-background/15 to-transparent"></div>
+            </div>
+            <div class="p-8">
+              <span class="text-xs font-bold uppercase tracking-[0.22em] text-primary">Legado</span>
+              <h3 class="mt-3 font-headline text-3xl text-white">Graduaciones</h3>
+              <p class="mt-4 text-base leading-7 text-textMuted">Ceremonias y recepciones con una ejecución solemne, visualmente potente y diseñada para realzar el valor del hito alcanzado.</p>
+            </div>
+          </article>
+
+          <article class="group overflow-hidden rounded-[2rem] border border-white/8 bg-surface shadow-soft">
+            <div class="relative h-80 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1460978812857-470ed1c77af0?auto=format&fit=crop&w=1200&q=80" alt="Decoración delicada para bautizo en espacio luminoso" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-background/15 to-transparent"></div>
+            </div>
+            <div class="p-8">
+              <span class="text-xs font-bold uppercase tracking-[0.22em] text-primary">Tradición</span>
+              <h3 class="mt-3 font-headline text-3xl text-white">Bautizos y celebraciones familiares</h3>
+              <p class="mt-4 text-base leading-7 text-textMuted">Eventos emotivos construidos con sensibilidad, equilibrio visual y una planificación cómoda para toda la familia.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="border-t border-white/5 bg-surface py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="max-w-2xl">
+          <span class="text-xs font-bold uppercase tracking-[0.28em] text-primary">Inspiración visual</span>
+          <h2 class="mt-4 font-headline text-4xl text-white sm:text-5xl">Una estética que se percibe antes de explicarse</h2>
+        </div>
+
+        <div class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80" alt="Mesa imperial decorada para boda elegante" class="h-80 w-full rounded-[1.75rem] object-cover" />
+          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=900&q=80" alt="Evento de noche con iluminación cálida y ambiente de lujo" class="h-80 w-full rounded-[1.75rem] object-cover md:mt-10" />
+          <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=900&q=80" alt="Detalle floral y cristalería en evento premium" class="h-80 w-full rounded-[1.75rem] object-cover" />
+          <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&w=900&q=80" alt="Recepción elegante en espacio exclusivo" class="h-80 w-full rounded-[1.75rem] object-cover md:mt-10" />
+        </div>
+      </div>
+    </section>
+
+    <section class="border-t border-white/5 bg-background py-24">
+      <div class="mx-auto max-w-5xl px-6 text-center lg:px-8">
+        <span class="material-symbols-outlined text-7xl text-primary/20">format_quote</span>
+        <blockquote class="mx-auto mt-6 max-w-4xl font-headline text-3xl italic leading-relaxed text-white sm:text-5xl">
+          La diferencia entre un evento correcto y uno inolvidable está en la intención con la que se diseña y en la disciplina con la que se ejecuta.
+        </blockquote>
+        <p class="mt-8 text-xs font-bold uppercase tracking-[0.35em] text-primary">Compromiso En Talla</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="px-6 pb-24 lg:px-8 lg:pb-32">
+      <div class="mx-auto grid max-w-7xl gap-10 overflow-hidden rounded-[2rem] border border-white/8 bg-surfaceSoft shadow-soft lg:grid-cols-[1fr_0.95fr]">
+        <div class="relative p-8 sm:p-12 lg:p-14">
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(233,193,118,0.14),transparent_30%)]"></div>
+          <div class="relative">
+            <span class="text-xs font-bold uppercase tracking-[0.28em] text-primary">Contacto</span>
+            <h2 class="mt-4 font-headline text-4xl leading-tight text-white sm:text-5xl">Cuéntanos tu idea. Nosotros la convertimos en experiencia.</h2>
+            <p class="mt-6 max-w-xl text-lg leading-8 text-textMuted">
+              Solicita una primera conversación para definir enfoque, estilo y necesidades del evento. Prepararemos una propuesta alineada con tus objetivos y con el nivel de detalle que exige una producción premium.
+            </p>
+
+            <div class="mt-10 grid gap-5 sm:grid-cols-2">
+              <div class="rounded-2xl border border-white/8 bg-background/40 p-5">
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-primary">Email</p>
+                <a href="mailto:hola@entallaevents.com" class="mt-3 block text-base text-white transition hover:text-primary">hola@entallaevents.com</a>
+              </div>
+              <div class="rounded-2xl border border-white/8 bg-background/40 p-5">
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-primary">Teléfono</p>
+                <a href="tel:+34600000000" class="mt-3 block text-base text-white transition hover:text-primary">+34 600 000 000</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-white/8 bg-background/30 p-8 sm:p-12 lg:border-l lg:border-t-0">
+          <form class="space-y-5">
+            <div>
+              <label for="nombre" class="mb-2 block text-sm font-semibold text-white">Nombre</label>
+              <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" class="block w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3.5 text-white placeholder:text-textMuted focus:border-primary focus:ring-primary" />
+            </div>
+            <div>
+              <label for="email" class="mb-2 block text-sm font-semibold text-white">Correo electrónico</label>
+              <input id="email" name="email" type="email" placeholder="tu@email.com" class="block w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3.5 text-white placeholder:text-textMuted focus:border-primary focus:ring-primary" />
+            </div>
+            <div>
+              <label for="tipoEvento" class="mb-2 block text-sm font-semibold text-white">Tipo de evento</label>
+              <select id="tipoEvento" name="tipoEvento" class="block w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3.5 text-white focus:border-primary focus:ring-primary">
+                <option class="bg-surface" value="">Selecciona una opción</option>
+                <option class="bg-surface">Fiesta privada</option>
+                <option class="bg-surface">Graduación</option>
+                <option class="bg-surface">Bautizo</option>
+                <option class="bg-surface">Evento corporativo</option>
+                <option class="bg-surface">Otro</option>
+              </select>
+            </div>
+            <div>
+              <label for="mensaje" class="mb-2 block text-sm font-semibold text-white">Cuéntanos qué necesitas</label>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Fecha aproximada, número de invitados, estilo, ubicación y cualquier detalle relevante." class="block w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3.5 text-white placeholder:text-textMuted focus:border-primary focus:ring-primary"></textarea>
+            </div>
+            <button type="submit" class="inline-flex w-full items-center justify-center rounded-full bg-primary px-6 py-4 text-sm font-extrabold uppercase tracking-[0.22em] text-background transition hover:-translate-y-0.5 hover:bg-[#f0cb86]">
+              Solicitar propuesta
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/5 bg-background">
+    <div class="mx-auto grid max-w-7xl gap-12 px-6 py-12 lg:grid-cols-[1.2fr_0.8fr_0.8fr] lg:px-8">
+      <div>
+        <p class="font-headline text-2xl italic text-primary">En Talla Events</p>
+        <p class="mt-4 max-w-md text-sm leading-7 text-textMuted">
+          Diseño y producción de eventos exclusivos con una visión editorial, un control técnico riguroso y una ejecución a la altura de cada ocasión.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xs font-bold uppercase tracking-[0.22em] text-primary">Navegación</h3>
+        <ul class="mt-5 space-y-3 text-sm text-secondary">
+          <li><a href="#inicio" class="transition hover:text-primary">Inicio</a></li>
+          <li><a href="#servicios" class="transition hover:text-primary">Servicios</a></li>
+          <li><a href="#nosotros" class="transition hover:text-primary">Nosotros</a></li>
+          <li><a href="#contacto" class="transition hover:text-primary">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xs font-bold uppercase tracking-[0.22em] text-primary">Legal y social</h3>
+        <div class="mt-5 flex gap-3">
+          <a href="#" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-secondary transition hover:border-primary/40 hover:text-primary" aria-label="Instagram">
+            <span class="material-symbols-outlined">photo_camera</span>
+          </a>
+          <a href="#" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-secondary transition hover:border-primary/40 hover:text-primary" aria-label="Web">
+            <span class="material-symbols-outlined">public</span>
+          </a>
+          <a href="mailto:hola@entallaevents.com" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-secondary transition hover:border-primary/40 hover:text-primary" aria-label="Email">
+            <span class="material-symbols-outlined">mail</span>
+          </a>
+        </div>
+        <p class="mt-5 text-sm text-textMuted">© 2026 En Talla Events. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById('menuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuButton?.addEventListener('click', () => {
+      const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded', String(!isExpanded));
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuButton.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+</html>
