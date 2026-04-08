@@ -299,18 +299,18 @@
             <div class="mt-10 grid gap-5 sm:grid-cols-2">
               <div class="rounded-2xl border border-white/8 bg-background/40 p-5">
                 <p class="text-xs font-bold uppercase tracking-[0.22em] text-primary">Email</p>
-                <a href="mailto:hola@entallaevents.com" class="mt-3 block text-base text-white transition hover:text-primary">hola@entallaevents.com</a>
+                <a href="mailto:entallaevents@hotmail.com" class="mt-3 block text-base text-white transition hover:text-primary">entallaevents@hotmail.com</a>
               </div>
               <div class="rounded-2xl border border-white/8 bg-background/40 p-5">
                 <p class="text-xs font-bold uppercase tracking-[0.22em] text-primary">Teléfono</p>
-                <a href="tel:+34600000000" class="mt-3 block text-base text-white transition hover:text-primary">+34 600 000 000</a>
+                <a href="tel:+34600000000" class="mt-3 block text-base text-white transition hover:text-primary">+34 636 246 158</a>
               </div>
             </div>
           </div>
         </div>
 
         <div class="border-t border-white/8 bg-background/30 p-8 sm:p-12 lg:border-l lg:border-t-0">
-          <form class="space-y-5">
+          <form id="contactForm" class="space-y-5">
             <div>
               <label for="nombre" class="mb-2 block text-sm font-semibold text-white">Nombre</label>
               <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" class="block w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3.5 text-white placeholder:text-textMuted focus:border-primary focus:ring-primary" />
@@ -371,7 +371,7 @@
           <a href="#" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-secondary transition hover:border-primary/40 hover:text-primary" aria-label="Web">
             <span class="material-symbols-outlined">public</span>
           </a>
-          <a href="mailto:hola@entallaevents.com" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-secondary transition hover:border-primary/40 hover:text-primary" aria-label="Email">
+          <a href="mailto:entallaevents@hotmail.com" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-secondary transition hover:border-primary/40 hover:text-primary" aria-label="Email">
             <span class="material-symbols-outlined">mail</span>
           </a>
         </div>
@@ -395,6 +395,59 @@
         mobileMenu.classList.add('hidden');
         menuButton.setAttribute('aria-expanded', 'false');
       });
+    });
+  </script>
+  <!-- Floating Social Buttons -->
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+
+    <!-- TikTok -->
+    <a href="https://www.tiktok.com/@en.talla.events?_r=1&_t=ZN-95NOVr7vOnG" target="_blank" class="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 backdrop-blur border border-white/10 text-white hover:bg-white/20 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+        <path d="M12 2a7 7 0 0 0 7 7v2.5a9.5 9.5 0 0 1-4-1v5.5a6.5 6.5 0 1 1-6.5-6.5c.3 0 .6 0 .9.1v2.6a3.9 3.9 0 1 0 2.6 3.7V2z"/>
+      </svg>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/en_talla_events?igsh=MWprb2R1MDg5ZzIyZg==" target="_blank" class="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 backdrop-blur border border-white/10 text-white hover:bg-white/20 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+        <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0z"/>
+      </svg>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:entallaevents@hotmail.com" class="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 backdrop-blur border border-white/10 text-white hover:bg-white/20 transition">
+      <span class="material-symbols-outlined">mail</span>
+    </a>
+
+    <!-- WhatsApp Floating -->
+    <a href="https://wa.me/34636246158?text=Hola%20En%20Talla%20Events,%20estoy%20interesado%20en%20organizar%20un%20evento%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20y%20presupuesto." target="_blank" class="flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-lg hover:scale-105 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="w-7 h-7">
+        <path d="M16 3C9.4 3 4 8.3 4 14.8c0 2.6.9 5 2.4 7L4 29l7.4-2.3c1.9 1 4 1.6 6.2 1.6 6.6 0 12-5.3 12-11.8S22.6 3 16 3zm0 21.4c-2 0-3.9-.6-5.4-1.6l-.4-.2-4.4 1.3 1.4-4.2-.3-.4c-1.1-1.5-1.7-3.3-1.7-5.2 0-5 4.2-9.1 9.4-9.1s9.4 4.1 9.4 9.1-4.2 9.1-9.4 9.1zm5.2-6.8c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2s-.8.9-1 .9-.4 0-.7-.2c-.3-.2-1.3-.5-2.4-1.6-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.2-.7.2-.2.3-.4.5-.6.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6 0-.2-.7-1.7-.9-2.3-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.6 1.2 3 1.4 3.2c.2.2 2.4 3.6 5.8 5 3.4 1.4 3.4.9 4 .9.6 0 2-.8 2.3-1.5.3-.7.3-1.3.2-1.5-.1-.2-.3-.3-.6-.5z"/>
+      </svg>
+    </a>
+
+  </div>
+  <script>
+    const form = document.getElementById('contactForm');
+
+    form?.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const nombre = document.getElementById('nombre').value || '';
+      const email = document.getElementById('email').value || '';
+      const tipo = document.getElementById('tipoEvento').value || '';
+      const mensaje = document.getElementById('mensaje').value || '';
+
+      const texto = `Hola En Talla Events,%0A%0A` +
+        `Nombre: ${encodeURIComponent(nombre)}%0A` +
+        `Email: ${encodeURIComponent(email)}%0A` +
+        `Tipo de evento: ${encodeURIComponent(tipo)}%0A` +
+        `Detalles: ${encodeURIComponent(mensaje)}%0A%0A` +
+        `Me gustaría recibir información y presupuesto.`;
+
+      const url = `https://wa.me/34636246158?text=${texto}`;
+
+      window.open(url, '_blank');
     });
   </script>
 </body>
